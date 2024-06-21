@@ -1,0 +1,15 @@
+.title:hover {
+  opacity: 0.8 !important;
+  transform: scale(1.025);
+  transition: 0.1s ease;
+}
+
+.link-fy {
+  margin-right: 4px;
+}
+
+.biggify:hover {
+  background-color: transparent;
+  transform: scale(1.15);
+  transition: 0.5s ease;
+}

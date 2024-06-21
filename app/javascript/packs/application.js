@@ -1,11 +1,3 @@
-import { Application } from '@hotwired/stimulus';
-
-const application = Application.start();
-
-// Configure Stimulus development experience
-application.debug = false;
-window.Stimulus = application;
-
 import Typed from 'typed.js';
 
 const typedText = () => {
@@ -75,5 +67,3 @@ const elements = document.querySelectorAll('.collection-item');
 elements.forEach((el) => {
   el.addEventListener('click', () => toggleOnClick(el));
 });
-
-export { application };

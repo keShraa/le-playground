@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SimpleLePlayground</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Le Playground made by keShra</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= action_cable_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
-
   <body>
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <%= link_to root_path, class:"biggify brand-logo" do %>
+          <i class="material-icons">gamepad</i>Playground
+        <% end %>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <%= link_to root_path do %>
+              <i class="material-icons">home</i>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
     <%= yield %>
+
+    <footer class="page-footer orange" style="margin-top: 43px">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h4 class="white-text">Le Playground</h4>
+            <p class="grey-text text-lighten-4">
+              This website has been done in barely a day for fun and by a single person. Please be indulgent. 😂
+              <br>Can you criticize his work?<br>
+              <%= image_tag "non.png" %>
+              <br>
+              Enjoy the games and the stream!
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>Made by
+            <span class="orange-text text-lighten-3">
+              keShra, 2020 © and revamped in 2024 - <span class="typed-text"></span>
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <%= javascript_include_tag 'application' %>
+
+    <%= javascript_pack_tag 'application' %>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </body>
 </html>
+<body>

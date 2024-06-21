@@ -1,0 +1,98 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <br><br>
+    <h1 class="header center orange-text title">Geobingo</h1>
+    <div class="row center">
+      <h5 class="header col s12 light">Find a place on <strong>Google Maps (Street View)</strong> and score as many points as you can within a <strong>given time</strong>!</h5>
+    </div>
+  </div>
+</div>
+<div class="container" id="game">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m12 l4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons">language</i></h2>
+          <h5 class="center">Google Maps</h5>
+
+          <p class="light">
+            Open Google Maps, walk around the planet with <strong>Google Street View</strong> and just escape... Travel! 😎🌎
+            <br><br>
+            <%= link_to "https://www.google.fr/maps/@29.7073021,5.8859852,3z", target:'_blank' do %>
+              Google Maps
+              <%= image_tag 'logo.png', width: "60px" %>
+            <% end %>
+            <br><br>
+            ⚠️ <em>Please, do no cheat by using the search bar, or even worse, directly looking for a location on Google...</em>
+            <big class="typed-trip"></big>
+          </p>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons">loupe</i></h2>
+          <h5 class="center">Things you should find</h5>
+
+            <ul class="collection">
+              <ol class="collection-item">A sheep - 1 pt</ol>
+              <ol class="collection-item">A windmill - 1 pt</ol>
+              <ol class="collection-item">Pikachu - 1 pt</ol>
+              <ol class="collection-item">A Ferris wheel - 1 pt</ol>
+              <ol class="collection-item">The word "chocolatine" - 1 pt</ol>
+              <ol class="collection-item">A sports car - 1 pt</ol>
+              <ol class="collection-item">A tandem bike in Amsterdam - 1 pt</ol>
+              <ol class="collection-item">A French Embassy - 1 pt</ol>
+              <ol class="collection-item">A graffiti (outside of Europe) - 1 pt</ol>
+              <ol class="collection-item">A person on the phone - 1 pt</ol>
+              <ol class="collection-item">A green gaz station - 1 pt</ol>
+              <ol class="collection-item">A flag hooked to a balcony - 1 pt</ol>
+              <ol class="collection-item">A tall building (30 stories min) - 1 pt</ol>
+              <ol class="collection-item">A house with green shutters - 1 pt</ol>
+              <ol class="collection-item">A store with a French name in Asia - 1 pt</ol>
+              <ol class="collection-item">A house that stands out from the others (colors, shape, decoration, outstanding garden) - 1 pt</ol>
+              <ol class="collection-item">A flying bird - 2 pts</ol>
+              <ol class="collection-item">A Mickey costume - 2 pts</ol>
+              <ol class="collection-item">Nuns in the street - 2 pts</ol>
+              <ol class="collection-item">A Pirats ship or drakkar - 2 pts</ol>
+              <ol class="collection-item">A dilapidated or abandoned house - 2 pts</ol>
+              <ol class="collection-item">A cop in uniform - 2 pts</ol>
+              <ol class="collection-item">A house with a "Beware of naughty dog" sign - 2 pts</ol>
+              <ol class="collection-item">The moon - 3 pts</ol>
+              <ol class="collection-item">A street sign containing a veggetable - 3 pts</ol>
+              <ol class="collection-item">A traffic sign containing 3 different languages - 3 pts</ol>
+            </ul>
+
+        </div>
+      </div>
+
+      <div class="col s12 m12 l4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons">extension</i></h2>
+          <h5 class="center">Rules</h5>
+
+          <p class="light">
+            You have about <strong>10 - 15 minutes</strong> to find as many as possible.<br>
+            <strong>Be strategic!</strong><br><br>
+            You should <strong>check each item</strong> off the list as soon as you find it!<br>
+            And don't forget to keep the <strong>Google Street View link</strong> to prove that you did find the:.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h5 class="center">Example</h5>
+      <ul class="collection">
+        <a class="collection-item">Someone jogging</a>
+      </ul>
+      <%= link_to "https://www.google.com/maps/@44.8422258,-0.5689033,3a,75y,188.1h,99.88t/data=!3m6!1e1!3m4!1shWnOFsnJOSr7mslxoWH02g!2e0!7i13312!8i6656", target:"_blank" do %>
+        <%= image_tag 'streetview.png', class:"streetview" %>
+      <% end %>
+    </div>
+
+  </div>
+  <br><br>
+</div>

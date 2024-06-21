@@ -1,0 +1,35 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <br><br>
+    <h1 class="header center orange-text title">Welcome to the playground</h1>
+    <div class="row center">
+      <h5 class="header col s12 light">Enjoy amazing chill out session with friends and colleagues!</h5>
+    </div>
+    <div class="row center">
+      <p class="light">Enjoy a stream in the waiting room or play our amazing games</p>
+      <%= link_to "Geobingo", geobingo_path, class: "btn-large waves-effect waves-light light-blue" %>
+      <%= link_to "Threenames", threenames_path, class: "btn-large waves-effect waves-light orange", disabled: true %>
+    </div>
+    <br><br>
+
+  </div>
+</div>
+
+<div class="container center">
+  <h5 class="center" id="waiting-room">Waiting room</h5>
+  <!-- Add a placeholder for the Twitch embed -->
+  <div id="twitch-embed"></div>
+  <!-- Load the Twitch embed script -->
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+  <script type="text/javascript">
+    new Twitch.Embed("twitch-embed", {
+      width: "100%",
+      height: 720,
+      channel: ['adorable_kittens', 'wpfarm', 'ourchickenlife'][Math.floor(Math.random() * 3)],
+      layout: "video",
+      autoplay: false,
+    });
+  </script>
+
+</div>
